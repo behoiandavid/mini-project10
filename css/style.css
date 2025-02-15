@@ -314,7 +314,7 @@ body {
     background: url(../svg/polygon.svg);
     position: absolute;
     z-index: 1;
-    width: 50.14px;
+    width: 51.14px;
     height: 50.14px;
     left: 66px;
     top: 57px;
@@ -1749,16 +1749,7 @@ body {
     }
 
     .header-button button {
-        width: 153px;
-        height: 40px;
-        background: linear-gradient(to right, rgba(255, 100, 50, 1), rgba(255, 162, 40, 1));
-        border-radius: 700px 675px 700px 700px;
-        color: var(--white);
-        font-size: 17.74px;
-        line-height: 19.43px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: 0.3s;
+        display: none;
     }
 
     .section1-block {
@@ -1799,16 +1790,16 @@ body {
     }
 
     .section1-block-text1 h2 {
-        font-size: 48.17px;
+        font-size: 40.17px;
         line-height: 52.74px;
         font-weight: 800;
         color: var(--white);
-        width: 500px;
+        width: 369px;
     }
 
     .section1-block-text1 svg {
-        width: 50px;
-        height: 60px;
+        width: 34.73px;
+        height: 60.45px;
     }
 
     .section1-block-text1 svg:first-child {
@@ -2029,7 +2020,7 @@ body {
     .section2-descriptions-text {
         padding: 45px 7px 0px 7px;
         height: 280px;
-        width: 181.61px;
+        width: 166.61px;
         background-color: var(--rootbeer);
         box-shadow: 0px 4px 27px 0px #8B24030D;
         border-radius: 29.53px;
@@ -2261,7 +2252,7 @@ body {
     }
 
     .section4-block-text1 p {
-        width: 390px;
+        width: 321px;
         font-size: 14px;
         line-height: 26.6px;
         color: var(--quicksilver);
@@ -2269,33 +2260,37 @@ body {
 
     .section4-block-pizza {
         position: relative;
-        width: 497px;
+        width: 389px;
     }
 
     .section4-block-pizza :nth-child(2) {
         position: absolute;
-        left: calc(48% - 171px);
-        top: calc(77% - 171px);
+        left: calc(38% - 102.95px);
+        top: calc(97% - 102.95px);
         z-index: 1;
+    }
+
+    .section4-block-pizza img {
+        width: 102.96px;
     }
 
     .section4-block-pizza :nth-child(3) {
         position: absolute;
-        left: calc(66% - 171px);
-        bottom: calc(100% - 171px);
+        left: calc(50% - 102.95px);
+        top: calc(93% - 94.84px);
     }
 
     .section4-block-pizza :nth-child(4) {
         position: absolute;
         z-index: 1;
-        top: calc(77% - 171px);
-        right: calc(40% - 171px);
+        top: calc(87% - 80.45px);
+        right: calc(67% - 102.95px);
     }
 
     .section4-block-pizza :last-child {
         position: absolute;
-        bottom: calc(100% - 171px);
-        right: calc(35% - 171px);
+        bottom: calc(100% - 104.33px);
+        right: calc(54% - 102.95px);
     }
 
     .section4-block-center {
@@ -2314,23 +2309,32 @@ body {
     .section4-block-svg1 {
         position: absolute;
         z-index: 2;
-        top: calc(40% - 297px);
-        right: calc(50% - 250px);
-        width: 250px;
-        height: 297px;
+        top: calc(30% - 117.45px);
+        right: calc(40% - 117.45px);
+    }
+
+    .section4-block-svg1 img {
+        width: 117.45px;
+        height: 117.45px;
     }
 
     .section4-block-bg img {
-        width: 404px;
+        width: 256px;
+        position: relative;
+        left: calc(90% - 256px);
     }
 
     .section4-block-svg2 {
         position: absolute;
-        left: calc(45% - 289px);
-        bottom: calc(58% - 302px);
+        left: calc(22% - 100.89px);
+        bottom: calc(38% - 107.24px);
         z-index: 2;
-        width: 289px;
-        height: 302px;
+    }
+
+
+    .section4-block-svg2 img {
+        width: 100.89px;
+        height: 107.24px;
     }
 
     .section1-footer {
