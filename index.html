@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizzashop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-block">
+                <div class="header-logo">
+                    <svg width="160" height="34" viewBox="0 0 160 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.84563 11.866C6.29973 11.094 6.99224 10.4469 7.92315 9.9247C8.87677 9.40248 10.0347 9.14137 11.3971 9.14137C12.714 9.14137 13.8946 9.39113 14.9391 9.89064C15.9835 10.3902 16.8122 11.06 17.4253 11.9001C18.0383 12.7401 18.5038 13.6711 18.8217 14.6928C19.1395 15.6918 19.2985 16.7363 19.2985 17.8261C19.2985 18.916 19.1395 19.9718 18.8217 20.9935C18.5038 21.9925 18.0383 22.9121 17.4253 23.7522C16.8122 24.5923 15.9835 25.2621 14.9391 25.7616C13.8946 26.2611 12.714 26.5109 11.3971 26.5109C9.33088 26.5109 7.70745 25.8978 6.52678 24.6717V33.4927H0.73695V9.65224H5.84563V11.866ZM12.4188 20.5848C13.0318 19.8128 13.3384 18.8933 13.3384 17.8261C13.3384 16.759 13.0318 15.8394 12.4188 15.0674C11.8285 14.2955 10.9657 13.9095 9.83039 13.9095C9.08112 13.9095 8.41132 14.1138 7.82098 14.5225C7.23064 14.9085 6.79925 15.3853 6.52678 15.9529V19.6993C6.79925 20.2669 7.23064 20.7551 7.82098 21.1638C8.41132 21.5498 9.08112 21.7428 9.83039 21.7428C10.9657 21.7428 11.8285 21.3568 12.4188 20.5848ZM27.8137 26H22.0239V9.65224H27.8137V26ZM28.2224 4.13487C28.2224 5.20201 27.9046 6.00805 27.2688 6.55297C26.6558 7.07519 25.8724 7.3363 24.9188 7.3363C23.9652 7.3363 23.1705 7.07519 22.5348 6.55297C21.9217 6.00805 21.6152 5.20201 21.6152 4.13487C21.6152 3.09043 21.9331 2.3071 22.5688 1.78488C23.2046 1.23995 23.9879 0.967488 24.9188 0.967488C25.8724 0.967488 26.6558 1.23995 27.2688 1.78488C27.9046 2.3071 28.2224 3.09043 28.2224 4.13487ZM31.0633 9.65224H44.8568V13.058L38.2495 21.2319H45.3336V26H30.5865V22.5942L37.2278 14.4203H31.0633V9.65224ZM47.8262 9.65224H61.6196V13.058L55.0124 21.2319H62.0964V26H47.3494V22.5942L53.9906 14.4203H47.8262V9.65224ZM80.3237 21.3341C80.3237 22.0152 80.6984 22.3558 81.4476 22.3558C81.6747 22.3558 81.8904 22.3218 82.0947 22.2536V25.8297C81.2319 26.1703 80.2556 26.3406 79.1658 26.3406C77.3494 26.3406 76.0552 25.7389 75.2832 24.5355C73.603 25.8524 71.7071 26.5109 69.5955 26.5109C67.9834 26.5109 66.6325 26.0568 65.5426 25.1486C64.4528 24.2403 63.9079 23.0143 63.9079 21.4703C63.9079 20.494 64.1236 19.6425 64.555 18.916C64.9864 18.1667 65.554 17.5991 66.2578 17.2131C66.9844 16.8271 67.7337 16.5433 68.5057 16.3616C69.3003 16.18 70.1291 16.0892 70.9919 16.0892C72.218 16.0892 73.3986 16.214 74.5339 16.4638V15.8848C74.5339 15.2718 74.2387 14.7836 73.6484 14.4203C73.0808 14.0343 72.2407 13.8414 71.1281 13.8414C69.4025 13.8414 67.4953 14.2614 65.4064 15.1015V10.2312C67.6315 9.50465 69.7545 9.14137 71.7752 9.14137C74.568 9.14137 76.6909 9.72035 78.144 10.8783C79.5972 12.0363 80.3237 14.0003 80.3237 16.7703V21.3341ZM69.868 20.9935C69.868 21.4476 70.0496 21.8336 70.4129 22.1515C70.7762 22.4466 71.253 22.5942 71.8433 22.5942C72.8651 22.5942 73.7619 22.3104 74.5339 21.7428V19.529C73.9209 19.3247 73.2284 19.2225 72.4564 19.2225C70.7308 19.2225 69.868 19.8128 69.868 20.9935ZM83.6063 14.3522C83.6063 12.5131 84.2761 11.1848 85.6157 10.3675C86.9553 9.55006 88.6582 9.14137 90.7244 9.14137C92.8587 9.14137 94.9135 9.60683 96.8889 10.5377V15.1355C96.1623 14.636 95.2541 14.2273 94.1643 13.9095C93.0971 13.5689 92.0867 13.3986 91.1331 13.3986C90.0887 13.3986 89.5664 13.6711 89.5664 14.216C89.5664 14.6247 89.8616 14.9653 90.4519 15.2377C91.0423 15.4875 91.7575 15.7259 92.5976 15.9529C93.4377 16.18 94.2778 16.4638 95.1179 16.8044C95.958 17.1223 96.6732 17.6558 97.2635 18.4051C97.8539 19.1544 98.149 20.0966 98.149 21.2319C98.149 24.7512 95.5493 26.5109 90.3498 26.5109C87.716 26.5109 85.5249 26.0114 83.7766 25.0123V20.4145C85.5249 21.5725 87.6138 22.1515 90.0433 22.1515C91.4737 22.1515 92.1889 21.879 92.1889 21.3341C92.1889 20.9481 91.8937 20.6302 91.3034 20.3805C90.7131 20.108 89.9978 19.8582 89.1578 19.6312C88.3177 19.4041 87.4776 19.1203 86.6375 18.7797C85.7974 18.4165 85.0822 17.8602 84.4918 17.1109C83.9015 16.3616 83.6063 15.4421 83.6063 14.3522ZM100.749 2.15951H106.538V10.8783C107.833 9.72035 109.343 9.14137 111.068 9.14137C113.202 9.14137 114.826 9.77712 115.938 11.0486C117.051 12.2974 117.607 13.8981 117.607 15.8508V26H111.817V16.6341C111.817 15.794 111.59 15.1583 111.136 14.7269C110.682 14.2955 110.08 14.0798 109.331 14.0798C108.219 14.0798 107.288 14.5566 106.538 15.5102V26H100.749V2.15951ZM122.709 24.2631C120.961 22.7418 120.087 20.5962 120.087 17.8261C120.087 15.0561 120.961 12.9218 122.709 11.4232C124.48 9.90199 126.671 9.14137 129.282 9.14137C131.893 9.14137 134.073 9.90199 135.821 11.4232C137.592 12.9218 138.478 15.0561 138.478 17.8261C138.478 20.5962 137.592 22.7418 135.821 24.2631C134.073 25.7616 131.893 26.5109 129.282 26.5109C126.671 26.5109 124.48 25.7616 122.709 24.2631ZM131.734 20.3805C132.257 19.6993 132.518 18.8479 132.518 17.8261C132.518 16.8044 132.257 15.9529 131.734 15.2718C131.212 14.5906 130.395 14.25 129.282 14.25C128.17 14.25 127.352 14.5906 126.83 15.2718C126.308 15.9529 126.047 16.8044 126.047 17.8261C126.047 18.8479 126.308 19.6993 126.83 20.3805C127.352 21.0616 128.17 21.4022 129.282 21.4022C130.395 21.4022 131.212 21.0616 131.734 20.3805ZM146.234 11.866C146.689 11.094 147.381 10.4469 148.312 9.9247C149.266 9.40248 150.424 9.14137 151.786 9.14137C153.103 9.14137 154.283 9.39113 155.328 9.89064C156.372 10.3902 157.201 11.06 157.814 11.9001C158.427 12.7401 158.893 13.6711 159.21 14.6928C159.528 15.6918 159.687 16.7363 159.687 17.8261C159.687 18.916 159.528 19.9718 159.21 20.9935C158.893 21.9925 158.427 22.9121 157.814 23.7522C157.201 24.5923 156.372 25.2621 155.328 25.7616C154.283 26.2611 153.103 26.5109 151.786 26.5109C149.72 26.5109 148.096 25.8978 146.916 24.6717V33.4927H141.126V9.65224H146.234V11.866ZM152.808 20.5848C153.421 19.8128 153.727 18.8933 153.727 17.8261C153.727 16.759 153.421 15.8394 152.808 15.0674C152.217 14.2955 151.354 13.9095 150.219 13.9095C149.47 13.9095 148.8 14.1138 148.21 14.5225C147.619 14.9085 147.188 15.3853 146.916 15.9529V19.6993C147.188 20.2669 147.619 20.7551 148.21 21.1638C148.8 21.5498 149.47 21.7428 150.219 21.7428C151.354 21.7428 152.217 21.3568 152.808 20.5848Z"
+                            fill="url(#paint0_linear_9_7)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_9_7" x1="138.504" y1="-2.00001" x2="40.215" y2="60.8784"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FF6432" />
+                                <stop offset="1" stop-color="#FFA228" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="header-nav-description">
+                            <li class="header-nav-descriptions">
+                                <a class="active" id="#" href="#">Home
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="url(#paint0_linear_9_26)" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_9_26" x1="5.16682" y1="-8.55383e-07"
+                                                x2="0.143893" y2="0.733904" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FF6432" />
+                                                <stop offset="1" stop-color="#FFA228" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header-nav-descriptions">
+                                <a id="#" href="#"> Menu</a>
+                            </li>
+                            <li class="header-nav-descriptions">
+                                <a id="#" href="#">Events</a>
+                            </li>
+                            <li class="header-nav-descriptions">
+                                <a id="" href="">About us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-nav-mobile">
+                        <nav>
+                            <input type="checkbox" id="check" style="display: none;">
+                            <label for="check" class="checkbtn">
+                                <svg width="28" height="19" viewBox="0 0 28 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="1.16515" y1="1.09913" x2="27.0826" y2="1.09913"
+                                        stroke="url(#paint0_linear_202_31)" stroke-width="1.80174"
+                                        stroke-linecap="round" />
+                                    <line x1="1.16515" y1="9.4148" x2="27.0826" y2="9.4148"
+                                        stroke="url(#paint1_linear_202_31)" stroke-width="1.80174"
+                                        stroke-linecap="round" />
+                                    <line x1="1.16515" y1="17.7305" x2="27.0826" y2="17.7305"
+                                        stroke="url(#paint2_linear_202_31)" stroke-width="1.80174"
+                                        stroke-linecap="round" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_202_31" x1="24.1343" y1="2" x2="22.7724"
+                                            y2="7.51564" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FF612E" />
+                                            <stop offset="1" stop-color="#FFA32B" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_202_31" x1="24.1343" y1="10.3157" x2="22.7724"
+                                            y2="15.8313" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FF612E" />
+                                            <stop offset="1" stop-color="#FFA32B" />
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_202_31" x1="24.1343" y1="18.6314" x2="22.7724"
+                                            y2="24.1471" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FF612E" />
+                                            <stop offset="1" stop-color="#FFA32B" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </label>
+                            <div class="nav-mobile">
+                                <ul class="nav-mobile-descriptions">
+                                    <li class="header-nav-descriptions">
+                                        <a class="active" id="#" href="#">Home</a>
+                                    </li>
+                                    <li class="header-nav-descriptions">
+                                        <a id="#" href="#"> Menu</a>
+                                    </li>
+                                    <li class="header-nav-descriptions">
+                                        <a id="#" href="#">Events</a>
+                                    </li>
+                                    <li class="header-nav-descriptions">
+                                        <a id="" href="">About us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-button">
+                    <div>
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="30" height="30" rx="15" fill="url(#paint0_linear_202_6)" />
+                            <mask id="mask0_202_6" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4"
+                                width="22" height="21">
+                                <rect x="4.50006" y="4.49994" width="21" height="20" fill="url(#pattern0_202_6)" />
+                            </mask>
+                            <g mask="url(#mask0_202_6)">
+                                <rect x="5.45654" y="4.49994" width="20.087" height="20.087" fill="white" />
+                                <rect x="4.50006" y="4.49994" width="22" height="20.087" fill="white" />
+                            </g>
+                            <defs>
+                                <pattern id="pattern0_202_6" patternContentUnits="objectBoundingBox" width="1"
+                                    height="1">
+                                    <use xlink:href="#image0_202_6"
+                                        transform="matrix(0.00195312 0 0 0.00205078 0 -0.025)" />
+                                </pattern>
+                                <linearGradient id="paint0_linear_202_6" x1="25.8341" y1="-4.27692e-06" x2="0.719464"
+                                    y2="3.66952" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF6432" />
+                                    <stop offset="1" stop-color="#FFA228" />
+                                </linearGradient>
+                                <image id="image0_202_6" width="512" height="512"
+                                    xlink:href="data:image/png;base64,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" />
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="section1-block">
+                    <div class="section1-block-bg1">
+                        <img src="./img/bg_pizza.png" alt="bg_pizza">
+                    </div>
+                    <div class="section1-block-left">
+                        <div class="section1-block-text1">
+                            <h2>The Fastestc
+                                <svg width="105" height="37" viewBox="0 0 105 37" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M104.126 28.6791C104.588 28.2173 104.588 27.4687 104.126 27.0069L96.6011 19.4819C96.1393 19.0201 95.3906 19.0201 94.9289 19.4819C94.4671 19.9437 94.4671 20.6924 94.9289 21.1541L101.618 27.843L94.9288 34.5319C94.4671 34.9936 94.4671 35.7423 94.9288 36.2041C95.3906 36.6659 96.1393 36.6659 96.6011 36.2041L104.126 28.6791ZM50.847 14.0818C50.4646 13.5524 49.7255 13.4332 49.1961 13.8156C48.6667 14.1979 48.5475 14.937 48.9298 15.4664L50.847 14.0818ZM75.4479 27.843L75.4479 26.6606L75.4479 27.843ZM48.9298 15.4664C49.3122 15.9958 50.0513 16.1151 50.5807 15.7327C51.1101 15.3504 51.2293 14.6112 50.847 14.0818L48.9298 15.4664ZM4.60882 7.52093C5.23347 7.33049 5.58547 6.66972 5.39503 6.04506C5.20458 5.42041 4.54381 5.06841 3.91916 5.25885L4.60882 7.52093ZM11.5256 2.93983C10.9009 3.13027 10.5489 3.79104 10.7394 4.41569C10.9298 5.04035 11.5906 5.39235 12.2152 5.2019L11.5256 2.93983ZM19.7167 3.23889C20.3621 3.1394 20.8047 2.53554 20.7052 1.89012C20.6057 1.2447 20.0019 0.802132 19.3565 0.901617L19.7167 3.23889ZM30.2299 1.0588C29.5876 0.940832 28.9713 1.36588 28.8533 2.00818C28.7353 2.65048 29.1604 3.2668 29.8027 3.38477L30.2299 1.0588ZM38.0189 6.15041C38.6018 6.44484 39.313 6.211 39.6075 5.6281C39.9019 5.0452 39.6681 4.33398 39.0852 4.03954L38.0189 6.15041ZM47.8404 10.4895C47.3865 10.0199 46.6379 10.0073 46.1684 10.4612C45.6989 10.9151 45.6862 11.6636 46.1401 12.1331L47.8404 10.4895ZM51.1738 18.2415C51.6115 18.7261 52.3592 18.7642 52.8439 18.3265C53.3285 17.8887 53.3666 17.141 52.9289 16.6564L51.1738 18.2415ZM58.7717 21.6679C58.226 21.3091 57.4928 21.4605 57.134 22.0061C56.7752 22.5517 56.9266 23.2849 57.4722 23.6438L58.7717 21.6679ZM63.8172 26.888C64.4276 27.1203 65.1106 26.8137 65.3428 26.2034C65.5751 25.593 65.2686 24.91 64.6582 24.6777L63.8172 26.888ZM72.1418 26.4802C71.4927 26.4091 70.9088 26.8777 70.8377 27.5269C70.7666 28.1761 71.2352 28.7599 71.8844 28.831L72.1418 26.4802ZM81.8773 29.0254C82.5304 29.0254 83.0598 28.496 83.0598 27.843C83.0598 27.19 82.5304 26.6606 81.8773 26.6606L81.8773 29.0254ZM96.8605 26.6606C96.2075 26.6606 95.6781 27.19 95.6781 27.843C95.6781 28.496 96.2075 29.0254 96.8605 29.0254L96.8605 26.6606ZM1.34483 8.51605L4.60882 7.52093L3.91916 5.25885L0.655171 6.25397L1.34483 8.51605ZM12.2152 5.2019L15.4792 4.20679L14.7896 1.94471L11.5256 2.93983L12.2152 5.2019ZM15.4792 4.20679C16.8821 3.77907 18.2979 3.45758 19.7167 3.23889L19.3565 0.901617C17.8268 1.1374 16.3009 1.48393 14.7896 1.94471L15.4792 4.20679ZM29.8027 3.38477C32.6587 3.90934 35.427 4.84116 38.0189 6.15041L39.0852 4.03954C36.2916 2.62844 33.3081 1.62419 30.2299 1.0588L29.8027 3.38477ZM46.1401 12.1331C47.1379 13.1653 48.0711 14.2774 48.9298 15.4664L50.847 14.0818C49.9219 12.8009 48.9161 11.6022 47.8404 10.4895L46.1401 12.1331ZM48.9298 15.4664C49.631 16.4373 50.3805 17.3631 51.1738 18.2415L52.9289 16.6564C52.193 15.8416 51.4976 14.9827 50.847 14.0818L48.9298 15.4664ZM57.4722 23.6438C59.4627 24.9528 61.5906 26.0408 63.8172 26.888L64.6582 24.6777C62.5925 23.8918 60.6183 22.8823 58.7717 21.6679L57.4722 23.6438ZM71.8844 28.831C73.061 28.9599 74.2503 29.0254 75.4479 29.0254L75.4479 26.6606C74.3367 26.6606 73.2333 26.5997 72.1418 26.4802L71.8844 28.831ZM75.4479 29.0254L81.8773 29.0254L81.8773 26.6606L75.4479 26.6606L75.4479 29.0254ZM96.8605 29.0254L103.29 29.0254L103.29 26.6606L96.8605 26.6606L96.8605 29.0254Z"
+                                        fill="#A3A3A3" />
+                                </svg>
+                                Pizza
+                                <svg width="54" height="70" viewBox="0 0 54 70" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M49.8703 23.5784C53.8355 21.9784 54.1603 16.49 50.4115 14.4335L25.2824 0.648117C23.0956 -0.551512 20.3611 0.0179671 18.835 1.99082L1.24052 24.7358C-0.630913 27.1551 0.0503262 30.6682 2.69038 32.2126L6.23419 34.2858C8.27109 35.4774 9.21627 37.9169 8.51388 40.1698L1.5343 62.5568C-0.00422521 67.4916 5.9644 71.2937 9.78637 67.8135L36.844 43.1754C38.9429 41.2642 38.5859 37.8657 36.1357 36.4323C33.1187 34.6674 33.4444 30.2064 36.6859 28.8985L49.8703 23.5784Z"
+                                        fill="url(#paint0_linear_10_59)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_10_59" x1="53.9533" y1="16.164" x2="16.5319"
+                                            y2="-1.70836" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FF6432" />
+                                            <stop offset="1" stop-color="#FFA228" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg> Delivery
+                            </h2>
+                        </div>
+                        <p>We will deliver juicy pizza for your family in 30 minutes, if the courier is late -
+                            <a style="color: #FFFFFF;" id="#" href="#"> pizza is free!</a>
+                        </p>
+                        <div class="section1-block-text2">
+                            <p>Cooking process:</p>
+                            <div class="section1-block-video">
+                                <div class="section1-block-video1">
+                                    <svg width="153" height="152" viewBox="0 0 153 152" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_dd_9_42)">
+                                            <circle cx="76.5" cy="71.5" r="40.5" fill="#1D0800" />
+                                            <circle cx="76.5" cy="71.5" r="40.5" stroke="url(#paint0_linear_9_42)"
+                                                stroke-width="3" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_dd_9_42" x="0.942856" y="0.571427" width="151.114"
+                                                height="151.114" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
+                                                <feOffset dy="4.62857" />
+                                                <feGaussianBlur stdDeviation="16.7786" />
+                                                <feComposite in2="hardAlpha" operator="out" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_9_42" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
+                                                <feOffset dy="4" />
+                                                <feGaussianBlur stdDeviation="12" />
+                                                <feComposite in2="hardAlpha" operator="out" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 1 0 0 0 0 0.24 0 0 0 0 0 0 0 0 0.67 0" />
+                                                <feBlend mode="normal" in2="effect1_dropShadow_9_42"
+                                                    result="effect2_dropShadow_9_42" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_9_42"
+                                                    result="shape" />
+                                            </filter>
+                                            <linearGradient id="paint0_linear_9_42" x1="105.752" y1="31" x2="37.9426"
+                                                y2="40.9077" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FF5924" />
+                                                <stop offset="1" stop-color="#FFA229" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <img src="./images/section1_pizza.png" alt="section1_pizza">
+                            </div>
+                        </div>
+                        <div class="section1-block-button">
+                            <div class="section1-block-button1">
+                                <button>To order</button>
+                            </div>
+                            <div class="section1-block-button2">
+                                <button>Pizza-Menu</button>
+                            </div>
+                            <div class="section1-block-arrow">
+                                <svg width="148" height="147" viewBox="0 0 148 147" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M146.804 142.459C147.439 142.224 147.763 141.518 147.527 140.883L143.69 130.535C143.455 129.9 142.749 129.576 142.114 129.811C141.479 130.047 141.155 130.752 141.391 131.387L144.801 140.586L135.603 143.997C134.967 144.232 134.644 144.938 134.879 145.573C135.114 146.208 135.82 146.532 136.455 146.296L146.804 142.459ZM74.6458 78.0902C74.9283 77.4747 74.6584 76.7467 74.0428 76.4641C73.4273 76.1816 72.6993 76.4515 72.4167 77.0671L74.6458 78.0902ZM63.7178 43.1441L64.3952 42.1218L63.7178 43.1441ZM72.4167 77.0671C72.1342 77.6826 72.4041 78.4106 73.0197 78.6932C73.6352 78.9757 74.3632 78.7058 74.6458 78.0902L72.4167 77.0671ZM5.08797 5.7652C5.65254 6.1393 6.4135 5.9849 6.7876 5.42032C7.16171 4.85574 7.0073 4.09479 6.44273 3.72068L5.08797 5.7652ZM18.8611 11.9495C18.2965 11.5754 17.5356 11.7298 17.1615 12.2944C16.7874 12.859 16.9418 13.6199 17.5063 13.994L18.8611 11.9495ZM25.7853 19.4799C26.3499 19.854 27.1108 19.6996 27.4849 19.135C27.859 18.5704 27.7046 17.8095 27.14 17.4354L25.7853 19.4799ZM39.5584 25.6642C38.9938 25.2901 38.2329 25.4445 37.8588 26.0091C37.4847 26.5737 37.6391 27.3346 38.2037 27.7087L39.5584 25.6642ZM46.4826 33.1946C47.0472 33.5687 47.8081 33.4143 48.1822 32.8497C48.5563 32.2851 48.4019 31.5242 47.8373 31.1501L46.4826 33.1946ZM60.2557 39.3789C59.6911 39.0048 58.9302 39.1592 58.5561 39.7238C58.182 40.2884 58.3364 41.0493 58.901 41.4234L60.2557 39.3789ZM65.9919 46.4356C66.4984 46.8852 67.2735 46.8392 67.7231 46.3328C68.1728 45.8263 68.1268 45.0512 67.6203 44.6015L65.9919 46.4356ZM74.7786 54.3882C74.5033 53.7694 73.7784 53.491 73.1596 53.7664C72.5409 54.0418 72.2625 54.7667 72.5379 55.3854L74.7786 54.3882ZM74.5731 62.5268C74.6653 63.1978 75.2839 63.667 75.9549 63.5748C76.6259 63.4827 77.0951 62.864 77.0029 62.193L74.5731 62.5268ZM76.0792 74.2829C76.2725 73.6338 75.903 72.9509 75.2539 72.7576C74.6048 72.5643 73.9219 72.9338 73.7286 73.5829L76.0792 74.2829ZM70.8581 81.3015C70.6746 81.9534 71.0543 82.6307 71.7062 82.8142C72.3581 82.9978 73.0354 82.6181 73.219 81.9662L70.8581 81.3015ZM72.7592 94.2367C72.6254 93.5728 71.9788 93.143 71.3148 93.2767C70.6509 93.4105 70.2211 94.0571 70.3548 94.7211L72.7592 94.2367ZM73.4824 103.156C73.8138 103.747 74.5613 103.957 75.1519 103.626C75.7426 103.294 75.9527 102.547 75.6213 101.956L73.4824 103.156ZM83.9695 110.961C83.4053 110.586 82.6442 110.74 82.2695 111.304C81.8948 111.868 82.0485 112.629 82.6127 113.004L83.9695 110.961ZM90.5091 117.014C91.1246 117.296 91.8526 117.026 92.1352 116.411C92.4177 115.795 92.1478 115.067 91.5323 114.785L90.5091 117.014ZM103.394 120.23C102.779 119.947 102.051 120.217 101.768 120.833C101.486 121.448 101.756 122.176 102.371 122.459L103.394 120.23ZM110.279 126.089C110.895 126.371 111.623 126.101 111.905 125.486C112.188 124.87 111.918 124.142 111.302 123.86L110.279 126.089ZM123.165 129.305C122.549 129.022 121.821 129.292 121.539 129.908C121.256 130.523 121.526 131.251 122.141 131.534L123.165 129.305ZM130.05 135.164C130.665 135.446 131.393 135.177 131.676 134.561C131.958 133.945 131.688 133.217 131.073 132.935L130.05 135.164ZM142.935 138.38C142.319 138.097 141.591 138.367 141.309 138.983C141.026 139.598 141.296 140.326 141.912 140.609L142.935 138.38ZM0.948505 3.02226L5.08797 5.7652L6.44273 3.72068L2.30327 0.977743L0.948505 3.02226ZM17.5063 13.994L25.7853 19.4799L27.14 17.4354L18.8611 11.9495L17.5063 13.994ZM38.2037 27.7087L46.4826 33.1946L47.8373 31.1501L39.5584 25.6642L38.2037 27.7087ZM58.901 41.4234L63.0404 44.1664L64.3952 42.1218L60.2557 39.3789L58.901 41.4234ZM63.0404 44.1664C64.0897 44.8617 65.0743 45.6208 65.9919 46.4356L67.6203 44.6015C66.6169 43.7106 65.541 42.8811 64.3952 42.1218L63.0404 44.1664ZM72.5379 55.3854C73.549 57.6573 74.2347 60.0632 74.5731 62.5268L77.0029 62.193C76.633 59.5004 75.8837 56.8712 74.7786 54.3882L72.5379 55.3854ZM73.7286 73.5829C73.3783 74.7589 72.9419 75.9231 72.4167 77.0671L74.6458 78.0902C75.2192 76.8411 75.6962 75.5689 76.0792 74.2829L73.7286 73.5829ZM72.4167 77.0671C71.7786 78.4572 71.2604 79.8726 70.8581 81.3015L73.219 81.9662C73.5869 80.6596 74.061 79.3641 74.6458 78.0902L72.4167 77.0671ZM70.3548 94.7211C70.9504 97.6774 72.0067 100.526 73.4824 103.156L75.6213 101.956C74.2709 99.5494 73.3042 96.942 72.7592 94.2367L70.3548 94.7211ZM82.6127 113.004C83.8492 113.825 85.1649 114.561 86.555 115.199L87.5782 112.97C86.3044 112.385 85.1002 111.712 83.9695 110.961L82.6127 113.004ZM86.555 115.199L90.5091 117.014L91.5323 114.785L87.5782 112.97L86.555 115.199ZM102.371 122.459L110.279 126.089L111.302 123.86L103.394 120.23L102.371 122.459ZM122.141 131.534L130.05 135.164L131.073 132.935L123.165 129.305L122.141 131.534ZM141.912 140.609L145.866 142.424L146.889 140.195L142.935 138.38L141.912 140.609Z"
+                                        fill="#A3A3A3" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section1-block-right">
+                        <img src="./images/pizza.png" alt="pizza">
+                        <img src="./images/section1_right.png" alt="section1_right">
+                        <img src="./images/fries.png" alt="fries">
+                    </div>
+                    <div class="section1-block-bg2">
+                        <img src="./img/bg_pizza2.png" alt="bg_pizza2">
+                    </div>
+                    <div class="section1-block-bg3">
+                        <img src="./img/bg_pizza3.png" alt="bg_pizza3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="section2-block">
+                    <div class="section2-block-bg">
+                        <img src="./img/bg_menu.png" alt="bg_menu">
+                    </div>
+                    <div class="section2-block-text">
+                        <h2>Menu</h2>
+                    </div>
+                    <div class="section2-block-list">
+                        <ul class="section2-block-description">
+                            <li class="section2-block-descriptions">
+                                <button class="button-active">
+                                    <a id="#" href="#">Show All</a>
+                                </button>
+                            </li>
+                            <li class="section2-block-descriptions">
+                                <button>
+                                    <a id="#" href="#">Meat</a>
+                                </button>
+                            </li>
+                            <li class="section2-block-descriptions">
+                                <button>
+                                    <a id="#" href="#">Vegetarian</a>
+                                </button>
+                            </li>
+                            <li class="section2-block-descriptions">
+                                <button>
+                                    <a id="#" href="#">Sea products</a>
+                                </button>
+                            </li>
+                            <li class="section2-block-descriptions">
+                                <button>
+                                    <a id="#" href="#">Mushroom</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section2-block-bg2">
+                        <img src="./img/bg_menu2.png" alt="bg_menu2">
+                    </div>
+                    <div class="section2-block-list">
+                        <ul class="section2-block-description2">
+                            <li class="section2-block-descriptions2">
+                                <img src="./images/img/pizza1.png" alt="pizza1">
+                                <div class="section2-descriptions-text">
+                                    <h2>Italian</h2>
+                                    <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                                    <div class="section2-descriptions-button">
+                                        <button>22</button>
+                                        <button>28</button>
+                                        <button>33</button>
+                                    </div>
+                                    <div class="section2-descriptions-button2">
+                                        <button>+ Ingridients</button>
+                                    </div>
+                                    <div class="section2-descriptions-text2">
+                                        <div class="section2-descriptions-text3">
+                                            <h2>8,35</h2>
+                                            <span>$</span>
+                                        </div>
+                                        <div class="section2-descriptions-button3">
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div class="section2-descriptions-button4">
+                                        <button>Order Now</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="section2-block-descriptions2">
+                                <img src="./images/img/pizza2.png" alt="pizza2">
+                                <div class="section2-descriptions-text">
+                                    <h2>Venecia</h2>
+                                    <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                                    <div class="section2-descriptions-button">
+                                        <button>22</button>
+                                        <button>28</button>
+                                        <button>33</button>
+                                    </div>
+                                    <div class="section2-descriptions-button2">
+                                        <button>+ Ingridients</button>
+                                    </div>
+                                    <div class="section2-descriptions-text2">
+                                        <div class="section2-descriptions-text3">
+                                            <h2>7,35</h2>
+                                            <span>$</span>
+                                        </div>
+                                        <div class="section2-descriptions-button3">
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div class="section2-descriptions-button4">
+                                        <button>Order Now</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="section2-block-descriptions2">
+                                <img src="./images/img/pizza3.png" alt="pizza3">
+                                <div class="section2-descriptions-text">
+                                    <h2>Meat</h2>
+                                    <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                                    <div class="section2-descriptions-button">
+                                        <button>22</button>
+                                        <button>28</button>
+                                        <button>33</button>
+                                    </div>
+                                    <div class="section2-descriptions-button2">
+                                        <button>+ Ingridients</button>
+                                    </div>
+                                    <div class="section2-descriptions-text2">
+                                        <div class="section2-descriptions-text3">
+                                            <h2>9,35</h2>
+                                            <span>$</span>
+                                        </div>
+                                        <div class="section2-descriptions-button3">
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div class="section2-descriptions-button4">
+                                        <button>Order Now</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="section2-block-descriptions2">
+                                <img src="./images/img/pizza4.png" alt="pizza4">
+                                <div class="section2-descriptions-text">
+                                    <h2>Cheese</h2>
+                                    <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                                    <div class="section2-descriptions-button">
+                                        <button>22</button>
+                                        <button>28</button>
+                                        <button>33</button>
+                                    </div>
+                                    <div class="section2-descriptions-button2">
+                                        <button>+ Ingridients</button>
+                                    </div>
+                                    <div class="section2-descriptions-text2">
+                                        <div class="section2-descriptions-text3">
+                                            <h2>8,35</h2>
+                                            <span>$</span>
+                                        </div>
+                                        <div class="section2-descriptions-button3">
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div class="section2-descriptions-button4">
+                                        <button>Order Now</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section2-block-img">
+                        <img src="./images/img/pizza.png" alt="pizza">
+                        <div class="section2_pizza-text">
+                            <h2>MOST POPULAR PIZZA</h2>
+                        </div>
+                    </div>
+                    <div class="section2-block-list">
+                        <ul class="section2-block-description2">
+                            <li class="section2-block-descriptions2">
+                                <img src="./images/img/pizza5.png" alt="pizza5">
+                                <div class="section2-descriptions-text">
+                                    <h2>Argentina</h2>
+                                    <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                                    <div class="section2-descriptions-button">
+                                        <button>22</button>
+                                        <button>28</button>
+                                        <button>33</button>
+                                    </div>
+                                    <div class="section2-descriptions-button2">
+                                        <button>+ Ingridients</button>
+                                    </div>
+                                    <div class="section2-descriptions-text2">
+                                        <div class="section2-descriptions-text3">
+                                            <h2>7,35</h2>
+                                            <span>$</span>
+                                        </div>
+                                        <div class="section2-descriptions-button3">
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div class="section2-descriptions-button4">
+                                        <button>Order Now</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="section2-block-descriptions2">
+                                <img src="./images/img/pizza6.png" alt="pizza6">
+                                <div class="section2-descriptions-text">
+                                    <h2>Gribnaya</h2>
+                                    <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                                    <div class="section2-descriptions-button">
+                                        <button>22</button>
+                                        <button>28</button>
+                                        <button>33</button>
+                                    </div>
+                                    <div class="section2-descriptions-button2">
+                                        <button>+ Ingridients</button>
+                                    </div>
+                                    <div class="section2-descriptions-text2">
+                                        <div class="section2-descriptions-text3">
+                                            <h2>6,35</h2>
+                                            <span>$</span>
+                                        </div>
+                                        <div class="section2-descriptions-button3">
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div class="section2-descriptions-button4">
+                                        <button>Order Now</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="section2-block-descriptions2">
+                                <img src="./images/img/pizza7.png" alt="pizza7">
+                                <div class="section2-descriptions-text">
+                                    <h2>Tomato</h2>
+                                    <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                                    <div class="section2-descriptions-button">
+                                        <button>22</button>
+                                        <button>28</button>
+                                        <button>33</button>
+                                    </div>
+                                    <div class="section2-descriptions-button2">
+                                        <button>+ Ingridients</button>
+                                    </div>
+                                    <div class="section2-descriptions-text2">
+                                        <div class="section2-descriptions-text3">
+                                            <h2>7,35</h2>
+                                            <span>$</span>
+                                        </div>
+                                        <div class="section2-descriptions-button3">
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div class="section2-descriptions-button4">
+                                        <button>Order Now</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="section2-block-descriptions2">
+                                <img src="./images/img/pizza8.png" alt="pizza8">
+                                <div class="section2-descriptions-text">
+                                    <h2>Italian x2</h2>
+                                    <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                                    <div class="section2-descriptions-button">
+                                        <button>22</button>
+                                        <button>28</button>
+                                        <button>33</button>
+                                    </div>
+                                    <div class="section2-descriptions-button2">
+                                        <button>+ Ingridients</button>
+                                    </div>
+                                    <div class="section2-descriptions-text2">
+                                        <div class="section2-descriptions-text3">
+                                            <h2>8,35</h2>
+                                            <span>$</span>
+                                        </div>
+                                        <div class="section2-descriptions-button3">
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div class="section2-descriptions-button4">
+                                        <button>Order Now</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section2-block-bg3">
+                        <img src="./img/bg_menu3.png" alt="bg_menu3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="section3-block">
+                    <div class="section3-block-bg">
+                        <img src="./img/bg_events.png" alt="events">
+                    </div>
+                    <div class="section3-block-top">
+                        <div class="section3-block-img2">
+                            <img src="./images/image/egg_and_bacon.png" alt="egg_and_bacon">
+                        </div>
+                        <div class="section3-block-img">
+                            <div class="section3-block-img1">
+                                <img src="./images/image/images1.png" alt="images1">
+                                <div class="section3-block-text">
+                                    <h2>HOW WE COOKING</h2>
+                                    <div class="section3-block-button">
+                                        <button>More</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section3-block-img1">
+                                <img src="./images/image/images2.png" alt="images2">
+                                <div class="section3-block-text">
+                                    <h2 style="height: 54.66px;">OUR BLOG</h2>
+                                    <div class="section3-block-button">
+                                        <button>More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section3-block-text3">
+                            <h2>Events</h2>
+                            <p>There are regular events in our pizzeria that will allow you to eat delicious food for a
+                                lower price!</p>
+                        </div>
+                        <div class="section3-block-img4">
+                            <div class="section3-block-img1">
+                                <img src="./images/image/images4.png" alt="images4">
+                                <div class="section3-block-text">
+                                    <h2>TWO PIZZA FOR 1 PRICE</h2>
+                                    <div class="section3-block-button">
+                                        <button>More</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section3-block-img1">
+                                <img src="./images/image/images3.png" alt="images3">
+                                <div class="section3-block-text">
+                                    <h2>KITCHEN TOUR</h2>
+                                    <div class="section3-block-button">
+                                        <button>More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section3-block-img3">
+                            <img src="./images/image/buritto.png" alt="buritto">
+                        </div>
+                    </div>
+                    <div class="section3-block-bottom">
+                        <div class="section3-block-img1">
+                            <img src="./images/image/images5.png" alt="images5">
+                            <div class="section3-block-text">
+                                <h2>FREE COFFEE FOR 3 PIZZA</h2>
+                                <div class="section3-block-button">
+                                    <button>More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section3-block-img1">
+                            <img src="./images/image/images6.png" alt="images6">
+                            <div class="section3-block-text">
+                                <h2>OUR INSTAGRAM</h2>
+                                <div class="section3-block-button">
+                                    <button>More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section3-block-img1">
+                            <img src="./images/image/images7.png" alt="images7">
+                            <div class="section3-block-text section3-block-text2">
+                                <h2>WHERE ARE YOU CHOOSE US?</h2>
+                                <div class="section3-block-button">
+                                    <button>More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section3-block-img5">
+                            <img src="./images/image/cofee.png" alt="cofee">
+                        </div>
+                    </div>
+                    <div class="section3-block-bg2">
+                        <img src="./img/bg_events2.png" alt="events2">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="section4-block">
+                    <div class="section4-block-bg1">
+                        <img src="./img/bg_about.png" alt="bg_about">
+                    </div>
+                    <div class="section4-block-text">
+                        <div class="section4-block-text1">
+                            <h2>About us</h2>
+                            <p>In just a couple of years, we have opened 6 outlets in different cities: Kazan,
+                                Chelyabinsk, Ufa, Samara, Izhevsk, and in the future we plan to develop the network in
+                                other major cities of Russia.</p>
+                        </div>
+                        <div class="section4-block-pizza">
+                            <img src="./images/images/pizza1.png" alt="pizza1">
+                            <img src="./images/images/pizza2.png" alt="pizza2">
+                            <img src="./images/images/pizza3.png" alt="pizza3">
+                            <img src="./images/images/pizza4.png" alt="pizza4">
+                            <img src="./images/images/pizza5.png" alt="pizza5">
+                        </div>
+                        <div class="section4-block-text1">
+                            <p style="width: 470px;">The kitchen of each point is at least: 400-500 sq. m. meters,
+                                hundreds of employees,
+                                smoothly performing work in order to receive / prepare / form / deliver customer orders
+                                on time.</p>
+                        </div>
+                    </div>
+                    <div class="section4-block-center">
+                        <svg width="105" height="37" viewBox="0 0 105 37" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M104.126 28.6791C104.588 28.2173 104.588 27.4687 104.126 27.0069L96.6011 19.4819C96.1393 19.0201 95.3906 19.0201 94.9289 19.4819C94.4671 19.9437 94.4671 20.6924 94.9289 21.1541L101.618 27.843L94.9288 34.5319C94.4671 34.9936 94.4671 35.7423 94.9288 36.2041C95.3906 36.6659 96.1393 36.6659 96.6011 36.2041L104.126 28.6791ZM50.847 14.0818C50.4646 13.5524 49.7255 13.4332 49.1961 13.8156C48.6667 14.1979 48.5475 14.937 48.9298 15.4664L50.847 14.0818ZM75.4479 27.843L75.4479 26.6606L75.4479 27.843ZM48.9298 15.4664C49.3122 15.9958 50.0513 16.1151 50.5807 15.7327C51.1101 15.3504 51.2293 14.6112 50.847 14.0818L48.9298 15.4664ZM4.60882 7.52093C5.23347 7.33049 5.58547 6.66972 5.39503 6.04506C5.20458 5.42041 4.54381 5.06841 3.91916 5.25885L4.60882 7.52093ZM11.5256 2.93983C10.9009 3.13027 10.5489 3.79104 10.7394 4.41569C10.9298 5.04035 11.5906 5.39235 12.2152 5.2019L11.5256 2.93983ZM19.7167 3.23889C20.3621 3.1394 20.8047 2.53554 20.7052 1.89012C20.6057 1.2447 20.0019 0.802132 19.3565 0.901617L19.7167 3.23889ZM30.2299 1.0588C29.5876 0.940832 28.9713 1.36588 28.8533 2.00818C28.7353 2.65048 29.1604 3.2668 29.8027 3.38477L30.2299 1.0588ZM38.0189 6.15041C38.6018 6.44484 39.313 6.211 39.6075 5.6281C39.9019 5.0452 39.6681 4.33398 39.0852 4.03954L38.0189 6.15041ZM47.8404 10.4895C47.3865 10.0199 46.6379 10.0073 46.1684 10.4612C45.6989 10.9151 45.6862 11.6636 46.1401 12.1331L47.8404 10.4895ZM51.1738 18.2415C51.6115 18.7261 52.3592 18.7642 52.8439 18.3265C53.3285 17.8887 53.3666 17.141 52.9289 16.6564L51.1738 18.2415ZM58.7717 21.6679C58.226 21.3091 57.4928 21.4605 57.134 22.0061C56.7752 22.5517 56.9266 23.2849 57.4722 23.6438L58.7717 21.6679ZM63.8172 26.888C64.4276 27.1203 65.1106 26.8137 65.3428 26.2034C65.5751 25.593 65.2686 24.91 64.6582 24.6777L63.8172 26.888ZM72.1418 26.4802C71.4927 26.4091 70.9088 26.8777 70.8377 27.5269C70.7666 28.1761 71.2352 28.7599 71.8844 28.831L72.1418 26.4802ZM81.8773 29.0254C82.5304 29.0254 83.0598 28.496 83.0598 27.843C83.0598 27.19 82.5304 26.6606 81.8773 26.6606L81.8773 29.0254ZM96.8605 26.6606C96.2075 26.6606 95.6781 27.19 95.6781 27.843C95.6781 28.496 96.2075 29.0254 96.8605 29.0254L96.8605 26.6606ZM1.34483 8.51605L4.60882 7.52093L3.91916 5.25885L0.655171 6.25397L1.34483 8.51605ZM12.2152 5.2019L15.4792 4.20679L14.7896 1.94471L11.5256 2.93983L12.2152 5.2019ZM15.4792 4.20679C16.8821 3.77907 18.2979 3.45758 19.7167 3.23889L19.3565 0.901617C17.8268 1.1374 16.3009 1.48393 14.7896 1.94471L15.4792 4.20679ZM29.8027 3.38477C32.6587 3.90934 35.427 4.84116 38.0189 6.15041L39.0852 4.03954C36.2916 2.62844 33.3081 1.62419 30.2299 1.0588L29.8027 3.38477ZM46.1401 12.1331C47.1379 13.1653 48.0711 14.2774 48.9298 15.4664L50.847 14.0818C49.9219 12.8009 48.9161 11.6022 47.8404 10.4895L46.1401 12.1331ZM48.9298 15.4664C49.631 16.4373 50.3805 17.3631 51.1738 18.2415L52.9289 16.6564C52.193 15.8416 51.4976 14.9827 50.847 14.0818L48.9298 15.4664ZM57.4722 23.6438C59.4627 24.9528 61.5906 26.0408 63.8172 26.888L64.6582 24.6777C62.5925 23.8918 60.6183 22.8823 58.7717 21.6679L57.4722 23.6438ZM71.8844 28.831C73.061 28.9599 74.2503 29.0254 75.4479 29.0254L75.4479 26.6606C74.3367 26.6606 73.2333 26.5997 72.1418 26.4802L71.8844 28.831ZM75.4479 29.0254L81.8773 29.0254L81.8773 26.6606L75.4479 26.6606L75.4479 29.0254ZM96.8605 29.0254L103.29 29.0254L103.29 26.6606L96.8605 26.6606L96.8605 29.0254Z"
+                                fill="#A3A3A3" />
+                        </svg>
+                    </div>
+                    <div class="section4-block-right">
+                        <div class="section4-block-svg1">
+                            <img src="./images/pizza.png" alt="pizza">
+                        </div>
+                        <div class="section4-block-bg">
+                            <img src="./images/images/section4.png" alt="section4">
+                        </div>
+                        <div class="section4-block-svg2">
+                            <img src="./images/fries.png" alt="fries">
+                        </div>
+                    </div>
+                    <div class="section4-block-bg2">
+                        <img src="./img/bg_about2.png" alt="bg_about2">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="bg-footer">
+            <section>
+                <div class="container">
+                    <div class="section1-footer">
+                        <div class="section1-footer-logo">
+                            <svg width="160" height="34" viewBox="0 0 160 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.84563 11.866C6.29973 11.094 6.99224 10.4469 7.92315 9.9247C8.87677 9.40248 10.0347 9.14137 11.3971 9.14137C12.714 9.14137 13.8946 9.39113 14.9391 9.89064C15.9835 10.3902 16.8122 11.06 17.4253 11.9001C18.0383 12.7401 18.5038 13.6711 18.8217 14.6928C19.1395 15.6918 19.2985 16.7363 19.2985 17.8261C19.2985 18.916 19.1395 19.9718 18.8217 20.9935C18.5038 21.9925 18.0383 22.9121 17.4253 23.7522C16.8122 24.5923 15.9835 25.2621 14.9391 25.7616C13.8946 26.2611 12.714 26.5109 11.3971 26.5109C9.33088 26.5109 7.70745 25.8978 6.52678 24.6717V33.4927H0.73695V9.65224H5.84563V11.866ZM12.4188 20.5848C13.0318 19.8128 13.3384 18.8933 13.3384 17.8261C13.3384 16.759 13.0318 15.8394 12.4188 15.0674C11.8285 14.2955 10.9657 13.9095 9.83039 13.9095C9.08112 13.9095 8.41132 14.1138 7.82098 14.5225C7.23064 14.9085 6.79925 15.3853 6.52678 15.9529V19.6993C6.79925 20.2669 7.23064 20.7551 7.82098 21.1638C8.41132 21.5498 9.08112 21.7428 9.83039 21.7428C10.9657 21.7428 11.8285 21.3568 12.4188 20.5848ZM27.8137 26H22.0239V9.65224H27.8137V26ZM28.2224 4.13487C28.2224 5.20201 27.9046 6.00805 27.2688 6.55297C26.6558 7.07519 25.8724 7.3363 24.9188 7.3363C23.9652 7.3363 23.1705 7.07519 22.5348 6.55297C21.9217 6.00805 21.6152 5.20201 21.6152 4.13487C21.6152 3.09043 21.9331 2.3071 22.5688 1.78488C23.2046 1.23995 23.9879 0.967488 24.9188 0.967488C25.8724 0.967488 26.6558 1.23995 27.2688 1.78488C27.9046 2.3071 28.2224 3.09043 28.2224 4.13487ZM31.0633 9.65224H44.8568V13.058L38.2495 21.2319H45.3336V26H30.5865V22.5942L37.2278 14.4203H31.0633V9.65224ZM47.8262 9.65224H61.6196V13.058L55.0124 21.2319H62.0964V26H47.3494V22.5942L53.9906 14.4203H47.8262V9.65224ZM80.3237 21.3341C80.3237 22.0152 80.6984 22.3558 81.4476 22.3558C81.6747 22.3558 81.8904 22.3218 82.0947 22.2536V25.8297C81.2319 26.1703 80.2556 26.3406 79.1658 26.3406C77.3494 26.3406 76.0552 25.7389 75.2832 24.5355C73.603 25.8524 71.7071 26.5109 69.5955 26.5109C67.9834 26.5109 66.6325 26.0568 65.5426 25.1486C64.4528 24.2403 63.9079 23.0143 63.9079 21.4703C63.9079 20.494 64.1236 19.6425 64.555 18.916C64.9864 18.1667 65.554 17.5991 66.2578 17.2131C66.9844 16.8271 67.7337 16.5433 68.5057 16.3616C69.3003 16.18 70.1291 16.0892 70.9919 16.0892C72.218 16.0892 73.3986 16.214 74.5339 16.4638V15.8848C74.5339 15.2718 74.2387 14.7836 73.6484 14.4203C73.0808 14.0343 72.2407 13.8414 71.1281 13.8414C69.4025 13.8414 67.4953 14.2614 65.4064 15.1015V10.2312C67.6315 9.50465 69.7545 9.14137 71.7752 9.14137C74.568 9.14137 76.6909 9.72035 78.144 10.8783C79.5972 12.0363 80.3237 14.0003 80.3237 16.7703V21.3341ZM69.868 20.9935C69.868 21.4476 70.0496 21.8336 70.4129 22.1515C70.7762 22.4466 71.253 22.5942 71.8433 22.5942C72.8651 22.5942 73.7619 22.3104 74.5339 21.7428V19.529C73.9209 19.3247 73.2284 19.2225 72.4564 19.2225C70.7308 19.2225 69.868 19.8128 69.868 20.9935ZM83.6063 14.3522C83.6063 12.5131 84.2761 11.1848 85.6157 10.3675C86.9553 9.55006 88.6582 9.14137 90.7244 9.14137C92.8587 9.14137 94.9135 9.60683 96.8889 10.5377V15.1355C96.1623 14.636 95.2541 14.2273 94.1643 13.9095C93.0971 13.5689 92.0867 13.3986 91.1331 13.3986C90.0887 13.3986 89.5664 13.6711 89.5664 14.216C89.5664 14.6247 89.8616 14.9653 90.4519 15.2377C91.0423 15.4875 91.7575 15.7259 92.5976 15.9529C93.4377 16.18 94.2778 16.4638 95.1179 16.8044C95.958 17.1223 96.6732 17.6558 97.2635 18.4051C97.8539 19.1544 98.149 20.0966 98.149 21.2319C98.149 24.7512 95.5493 26.5109 90.3498 26.5109C87.716 26.5109 85.5249 26.0114 83.7766 25.0123V20.4145C85.5249 21.5725 87.6138 22.1515 90.0433 22.1515C91.4737 22.1515 92.1889 21.879 92.1889 21.3341C92.1889 20.9481 91.8937 20.6302 91.3034 20.3805C90.7131 20.108 89.9978 19.8582 89.1578 19.6312C88.3177 19.4041 87.4776 19.1203 86.6375 18.7797C85.7974 18.4165 85.0822 17.8602 84.4918 17.1109C83.9015 16.3616 83.6063 15.4421 83.6063 14.3522ZM100.749 2.15951H106.538V10.8783C107.833 9.72035 109.343 9.14137 111.068 9.14137C113.202 9.14137 114.826 9.77712 115.938 11.0486C117.051 12.2974 117.607 13.8981 117.607 15.8508V26H111.817V16.6341C111.817 15.794 111.59 15.1583 111.136 14.7269C110.682 14.2955 110.08 14.0798 109.331 14.0798C108.219 14.0798 107.288 14.5566 106.538 15.5102V26H100.749V2.15951ZM122.709 24.2631C120.961 22.7418 120.087 20.5962 120.087 17.8261C120.087 15.0561 120.961 12.9218 122.709 11.4232C124.48 9.90199 126.671 9.14137 129.282 9.14137C131.893 9.14137 134.073 9.90199 135.821 11.4232C137.592 12.9218 138.478 15.0561 138.478 17.8261C138.478 20.5962 137.592 22.7418 135.821 24.2631C134.073 25.7616 131.893 26.5109 129.282 26.5109C126.671 26.5109 124.48 25.7616 122.709 24.2631ZM131.734 20.3805C132.257 19.6993 132.518 18.8479 132.518 17.8261C132.518 16.8044 132.257 15.9529 131.734 15.2718C131.212 14.5906 130.395 14.25 129.282 14.25C128.17 14.25 127.352 14.5906 126.83 15.2718C126.308 15.9529 126.047 16.8044 126.047 17.8261C126.047 18.8479 126.308 19.6993 126.83 20.3805C127.352 21.0616 128.17 21.4022 129.282 21.4022C130.395 21.4022 131.212 21.0616 131.734 20.3805ZM146.234 11.866C146.689 11.094 147.381 10.4469 148.312 9.9247C149.266 9.40248 150.424 9.14137 151.786 9.14137C153.103 9.14137 154.283 9.39113 155.328 9.89064C156.372 10.3902 157.201 11.06 157.814 11.9001C158.427 12.7401 158.893 13.6711 159.21 14.6928C159.528 15.6918 159.687 16.7363 159.687 17.8261C159.687 18.916 159.528 19.9718 159.21 20.9935C158.893 21.9925 158.427 22.9121 157.814 23.7522C157.201 24.5923 156.372 25.2621 155.328 25.7616C154.283 26.2611 153.103 26.5109 151.786 26.5109C149.72 26.5109 148.096 25.8978 146.916 24.6717V33.4927H141.126V9.65224H146.234V11.866ZM152.808 20.5848C153.421 19.8128 153.727 18.8933 153.727 17.8261C153.727 16.759 153.421 15.8394 152.808 15.0674C152.217 14.2955 151.354 13.9095 150.219 13.9095C149.47 13.9095 148.8 14.1138 148.21 14.5225C147.619 14.9085 147.188 15.3853 146.916 15.9529V19.6993C147.188 20.2669 147.619 20.7551 148.21 21.1638C148.8 21.5498 149.47 21.7428 150.219 21.7428C151.354 21.7428 152.217 21.3568 152.808 20.5848Z"
+                                    fill="url(#paint0_linear_9_7)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_9_7" x1="138.504" y1="-2.00001" x2="40.215"
+                                        y2="60.8784" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF6432" />
+                                        <stop offset="1" stop-color="#FFA228" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="section1-block-list">
+                            <ul class="section1-footer-description">
+                                <li class="section1-footer-descriptions">
+                                    <a id="#" href="#">Home</a>
+                                    <p>To Order</p>
+                                    <p>About us</p>
+                                    <p>Events</p>
+                                    <p>Menu</p>
+                                </li>
+                                <li class="section1-footer-descriptions">
+                                    <a id="#" href="#">Events</a>
+                                    <p>3 Pizza 1 Free Coffee</p>
+                                    <p>2 Pizza for 1 Price</p>
+                                    <p>Kitchen Tour</p>
+                                </li>
+                                <li class="section1-footer-descriptions">
+                                    <a id="#" href="#">Menu</a>
+                                    <p>Show All</p>
+                                    <p>Seaproducts</p>
+                                    <p>Vegan</p>
+                                    <p>Meat</p>
+                                </li>
+                                <li class="section1-footer-descriptions">
+                                    <a id="#" href="#">About Us</a>
+                                    <p>Our History</p>
+                                    <p>Why We?</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="section2-footer">
+                        <div class="section2-footer-number">
+                            <h2>+7 (937) 333-55-33</h2>
+                        </div>
+                        <div class="section2-footer-icon">
+                            <img src="./images/images/footer.png" alt="footer">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>
