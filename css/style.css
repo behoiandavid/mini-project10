@@ -2007,12 +2007,13 @@ body {
 
     .section2-block-descriptions2 {
         position: relative;
+        width: 154px;
     }
 
     .section2-block-descriptions2 img {
         position: absolute;
         top: calc(18% - 106px);
-        left: calc(80% - 107.3px);
+        left: calc(85% - 107.3px);
         width: 107.3px;
         height: 106px;
     }
@@ -2020,7 +2021,6 @@ body {
     .section2-descriptions-text {
         padding: 45px 7px 0px 7px;
         height: 280px;
-        width: 158.61px;
         background-color: var(--rootbeer);
         box-shadow: 0px 4px 27px 0px #8B24030D;
         border-radius: 29.53px;
